@@ -1,0 +1,22 @@
+.phonebook {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 20px;
+  /* margin-right: auto;
+  margin-left: auto; */
+
+  /* width: 400px; */
+  border: 2px solid rebeccapurple;
+}
+.phonebook-wrap {
+  margin-bottom: 10px;
+}
+
+.phonebook-label {
+  display: flex;
+  /* margin-right: 10px; */
+}
+.phonebook-input {
+  /* display: inline-block; */
+  margin-left: 10px;
+}
