@@ -103,15 +103,11 @@ h1 {
   margin-bottom: 5px;
 }
 
-.contact-span {
-  margin-left: 10px;
-  margin-right: 10px;
-}
 .filter {
   margin-bottom: 10px;
 }
 
 .contact-message {
-  font-size: 16px;
+  font-size: 100%;
   color: #f0c39c;
 }
