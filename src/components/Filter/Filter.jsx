@@ -8,7 +8,7 @@ const Filter = ({ filter, changeFilter }) => {
           className="filter-input"
           type="text"
           value={filter}
-          placeholder="Find contacts by name..."
+          placeholder="find contacts by name..."
           onChange={changeFilter}
         />
       </label>
