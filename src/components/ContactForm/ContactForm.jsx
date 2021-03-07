@@ -11,12 +11,13 @@ class ContactForm extends Component {
   handleChange = e => {
     const { name, value } = e.currentTarget;
     this.setState({
-      [name]: value, //
+      [name]: value,
     });
   };
 
   handleSubmit = e => {
     e.preventDefault();
+
     this.props.onSubmit(this.state);
     this.reset();
   };
@@ -39,6 +40,7 @@ class ContactForm extends Component {
                 type="text"
                 placeholder="name"
                 onChange={this.handleChange}
+                required
               ></input>
             </label>
             <label className="phonebook-label">
@@ -50,6 +52,7 @@ class ContactForm extends Component {
                 pattern="^[ 0-9]+$"
                 placeholder="number"
                 onChange={this.handleChange}
+                required
               ></input>
             </label>
           </div>

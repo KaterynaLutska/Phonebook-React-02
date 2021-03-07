@@ -41,8 +41,12 @@ class App extends Component {
   formSubmitHandler = data => {
     const { contacts } = this.state;
 
-    if (contacts.some(el => el.name === data.name)) {
+    if (
+      contacts.some(el => el.name.toLowerCase() === data.name.toLowerCase())
+    ) {
       return alert(`${data.name} is already in contacts`);
+    } else if (contacts.some(el => el.number === data.number)) {
+      return alert(`Number ${data.number} is already in contacts`);
     } else {
       contacts.push({
         id: uuidv4(),
@@ -50,9 +54,8 @@ class App extends Component {
         number: data.number,
         message: data.message,
       });
-      this.setState({ ...contacts });
+      return this.setState({ ...contacts });
     }
-    return;
   };
 
   changeFilter = e => {
@@ -71,17 +74,23 @@ class App extends Component {
     const visibleFilter = contacts.filter(el =>
       el.name.toLowerCase().includes(normalize),
     );
+
     return (
       <div className="App">
         <Container>
           <h1>Phonebook</h1>
           <ContactForm onSubmit={this.formSubmitHandler} />
-          <h2>Contacts</h2>
-          <Filter filter={filter} changeFilter={this.changeFilter} />
-          <ContactList
-            contacts={visibleFilter}
-            onDelete={this.deleteContacts}
-          ></ContactList>
+
+          {contacts.length > 0 && (
+            <>
+              <h2>Contacts</h2>
+              <Filter filter={filter} changeFilter={this.changeFilter} />
+              <ContactList
+                contacts={visibleFilter}
+                onDelete={this.deleteContacts}
+              ></ContactList>
+            </>
+          )}
         </Container>
       </div>
     );
