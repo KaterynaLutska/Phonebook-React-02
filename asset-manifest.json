@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-02-phonebook/static/css/main.67f295c1.chunk.css",
-    "main.js": "/goit-react-hw-02-phonebook/static/js/main.6c0db1e8.chunk.js",
-    "main.js.map": "/goit-react-hw-02-phonebook/static/js/main.6c0db1e8.chunk.js.map",
+    "main.css": "/goit-react-hw-02-phonebook/static/css/main.0f3073ac.chunk.css",
+    "main.js": "/goit-react-hw-02-phonebook/static/js/main.1e18663d.chunk.js",
+    "main.js.map": "/goit-react-hw-02-phonebook/static/js/main.1e18663d.chunk.js.map",
     "runtime-main.js": "/goit-react-hw-02-phonebook/static/js/runtime-main.63f9dadc.js",
     "runtime-main.js.map": "/goit-react-hw-02-phonebook/static/js/runtime-main.63f9dadc.js.map",
     "static/css/2.de71bbd8.chunk.css": "/goit-react-hw-02-phonebook/static/css/2.de71bbd8.chunk.css",
-    "static/js/2.1f4f912c.chunk.js": "/goit-react-hw-02-phonebook/static/js/2.1f4f912c.chunk.js",
-    "static/js/2.1f4f912c.chunk.js.map": "/goit-react-hw-02-phonebook/static/js/2.1f4f912c.chunk.js.map",
+    "static/js/2.afa7ba51.chunk.js": "/goit-react-hw-02-phonebook/static/js/2.afa7ba51.chunk.js",
+    "static/js/2.afa7ba51.chunk.js.map": "/goit-react-hw-02-phonebook/static/js/2.afa7ba51.chunk.js.map",
     "index.html": "/goit-react-hw-02-phonebook/index.html",
     "static/css/2.de71bbd8.chunk.css.map": "/goit-react-hw-02-phonebook/static/css/2.de71bbd8.chunk.css.map",
-    "static/css/main.67f295c1.chunk.css.map": "/goit-react-hw-02-phonebook/static/css/main.67f295c1.chunk.css.map",
-    "static/js/2.1f4f912c.chunk.js.LICENSE.txt": "/goit-react-hw-02-phonebook/static/js/2.1f4f912c.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/goit-react-hw-02-phonebook/static/media/bg-pattern.c18d167e.png"
+    "static/css/main.0f3073ac.chunk.css.map": "/goit-react-hw-02-phonebook/static/css/main.0f3073ac.chunk.css.map",
+    "static/js/2.afa7ba51.chunk.js.LICENSE.txt": "/goit-react-hw-02-phonebook/static/js/2.afa7ba51.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/goit-react-hw-02-phonebook/static/media/paper-1215551_1280.b7226c23.webp"
   },
   "entrypoints": [
     "static/js/runtime-main.63f9dadc.js",
     "static/css/2.de71bbd8.chunk.css",
-    "static/js/2.1f4f912c.chunk.js",
-    "static/css/main.67f295c1.chunk.css",
-    "static/js/main.6c0db1e8.chunk.js"
+    "static/js/2.afa7ba51.chunk.js",
+    "static/css/main.0f3073ac.chunk.css",
+    "static/js/main.1e18663d.chunk.js"
   ]
 }
