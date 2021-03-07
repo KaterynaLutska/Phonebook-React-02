@@ -42,7 +42,7 @@ class App extends Component {
     const { contacts } = this.state;
 
     if (
-      contacts.some(el => el.name.toLowerCase() === data.name.toLowerCase())
+      contacts.find(el => el.name.toLowerCase() === data.name.toLowerCase())
     ) {
       return alert(`${data.name} is already in contacts`);
     } else if (contacts.some(el => el.number === data.number)) {
