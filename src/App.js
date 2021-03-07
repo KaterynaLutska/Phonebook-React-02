@@ -1,10 +1,7 @@
 import './App.css';
-// бібліотеки json //
-
-import { Component } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import { Component } from 'react';
 
-// all import //
 import Container from './components/Container/Container';
 import ContactForm from './components/ContactForm';
 import Filter from './components/Filter';
@@ -13,10 +10,30 @@ import ContactList from './components/ContactList';
 class App extends Component {
   state = {
     contacts: [
-      { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
-      { id: 'id-2', name: 'Hermione Kline', number: '443-89-12' },
-      { id: 'id-3', name: 'Eden Clements', number: '645-17-79' },
-      { id: 'id-4', name: 'Annie Copeland', number: '227-91-26' },
+      {
+        id: 'id-1',
+        name: 'Rosie Simpson',
+        number: '459-12-56',
+        message: 'my friend ',
+      },
+      {
+        id: 'id-2',
+        name: 'Hermione Kline',
+        number: '443-89-12',
+        message: 'my sister',
+      },
+      {
+        id: 'id-3',
+        name: 'Eden Clements',
+        number: '645-17-79',
+        message: 'courier',
+      },
+      {
+        id: 'id-4',
+        name: 'Annie Copeland',
+        number: '227-91-26',
+        message: 'my colleague',
+      },
     ],
     filter: '',
   };
@@ -31,6 +48,7 @@ class App extends Component {
         id: uuidv4(),
         name: data.name,
         number: data.number,
+        message: data.message,
       });
       this.setState({ ...contacts });
     }
@@ -59,7 +77,7 @@ class App extends Component {
           <h1>Phonebook</h1>
           <ContactForm onSubmit={this.formSubmitHandler} />
           <h2>Contacts</h2>
-          <Filter filter={this.state.filter} changeFilter={this.changeFilter} />
+          <Filter filter={filter} changeFilter={this.changeFilter} />
           <ContactList
             contacts={visibleFilter}
             onDelete={this.deleteContacts}

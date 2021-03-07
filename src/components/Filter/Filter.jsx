@@ -1,12 +1,14 @@
+import PropTypes from 'prop-types';
+
 const Filter = ({ filter, changeFilter }) => {
   return (
-    <div>
+    <div className="filter">
       <label>
-        Find contacts by name
         <input
+          className="filter-input"
           type="text"
           value={filter}
-          placeholder="Search..."
+          placeholder="Find contacts by name..."
           onChange={changeFilter}
         />
       </label>
@@ -14,3 +16,8 @@ const Filter = ({ filter, changeFilter }) => {
   );
 };
 export default Filter;
+
+Filter.protoType = {
+  filter: PropTypes.string,
+  changeFilter: PropTypes.func,
+};
